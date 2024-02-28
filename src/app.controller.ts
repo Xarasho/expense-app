@@ -1,9 +1,17 @@
 import { Controller, Get } from '@nestjs/common';
 
-@Controller()
+// Controller entities create new endpoints
+@Controller('report/income')
 export class AppController {
-  @Get()
+  @Get('')
   getAllIncomeReports() {
     return [];
   }
+
+  @Get('')
+  getAllIncomeReports2() {
+    return {};
+  }
 }
+
+// http://localhost:3000/ + controller + method decorators
